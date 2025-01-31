@@ -1,7 +1,0 @@
-https://home.openweathermap.org/api_keys (get it here)
-
-API Key: c006079b30add5911817a186d7b81134
-
-source = urllib.request.openurl('http://api.openweathermap.org/data/2.5/weather?q=' + city_encoded + '&units=metric&appid=c006079b30add5911817a186d7b81134').read()
-            # http://api.openweathermap.org/data/2.5/weather?q=&units=metric&appid=c006079b30add5911817a186d7b81134'
-            list_of_data = json.loads(source)
