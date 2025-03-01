@@ -1,38 +1,6 @@
-# BUYTOPIA
+BUYTOPIA - Very simple and easy to use web app that allows users to add to a list what type of items they would like to purchase.
 
-BUYTOPIA is a simple and easy-to-use web application that allows users to create a personalized list of items they would like to purchase. With a user-friendly interface and essential features, BUYTOPIA makes managing your shopping list a breeze.
-
-## Table of Contents
-- [Features](#features)
-- [Technology Stack](#technology-stack)
-- [Installation Instructions](#installation-instructions)
-- [Usage](#usage)
-
-## Features
-- **User  Authentication**: Users can register, log in, and log out securely.
-- **CRUD Operations**: Create, Read, Update, and Delete items on your shopping list, available only after logging in.
-- **Database Management**: Easily edit the database using XAMPP or any other local SQL server.
-- **Customizable Design**: Modify the appearance of the app through the `style.css` file.
-
-## Technology Stack
-1. **Backend Framework**: 
-   - **Django**: A high-level Python web framework that promotes rapid development and clean design. User authentication features are built-in.
-   
-2. **Frontend**:
-   - **HTML/CSS**: Standard markup and styling languages for web page structure and design.
-   - **Bootstrap**: A popular CSS framework for responsive design.
-
-3. **Database**:
-   - **SQLite**: The default lightweight database with Django, suitable for development and small applications.
-   - **XAMPP**: Optional for those who prefer to use a local server and may require downgrading Django.
-
-4. **Virtual Environment**:
-   - **virtualenv**: A tool to create isolated Python environments, ensuring that project dependencies do not conflict.
-
-5. **Version Control and Hosting**:
-   - **Git**: Used for tracking changes in the code and collaborating with others.
-
-## Installation Instructions
+Instructions:
 1. Download the project as a zip.
 2. Run it in a python-compatible IDE.
 3. Install missing dependencies if needed (check with pip).
@@ -48,3 +16,27 @@ BUYTOPIA is a simple and easy-to-use web application that allows users to create
 7. Add your secret key to settings.py
 8. Run the site:
 (python manage.py runserver)
+
+List of features and functionalities:
+- BUYTOPIA features user authentication with the ability to login, logout, and account registration.
+- BUYTOPIA features very simple CRUD operations that can only be used after logging in with an account.
+- If necessary, the database can edited via XAMPP or any other local servers for SQL.
+- It is easily editable as there is a style.css file.
+
+Technology stack:
+1. Backend Framework:
+Django: A high-level Python web framework that encourages rapid development and clean, pragmatic design. User authentication features are derived from here.
+
+2. Frontend:
+HTML/CSS: Standard markup and styling languages for creating the structure and design of web pages.
+Bootstrap: A popular CSS framework.
+
+3. Database:
+SQLite (default with Django): A lightweight database that is easy to set up and is suitable for development and small applications.
+XAMPP: Optional, only usable when downgrading Django.
+
+4. Virtual Environment:
+virtualenv: A tool to create isolated Python environments, ensuring that dependencies for different projects do not interfere with each other.
+
+5. Version Control and Host:
+Git: Used to track changes in the code and collaborate with others.
