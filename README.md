@@ -1,5 +1,12 @@
 # ama-webappdev
+## Name
+**Francis Gabriel P. Vazquez**
 
-23001273810 
-Vazquez, Francis Gabriel P.
-BSIT - 2nd year (2nd Trimester)
+## Student ID
+**23001273810**
+
+## Program
+**Bachelor of Science in Information Technology (BSIT)**
+
+## Year Level
+**2nd Year (2nd Trimester)**
