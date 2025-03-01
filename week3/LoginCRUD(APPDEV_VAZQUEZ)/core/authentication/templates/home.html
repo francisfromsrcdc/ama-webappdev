@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'authentication/styles.css' %}">
+    <title style="color: lightcoral;">Welcome to BuyTopia, the number one place for your online shopping!</title>
+    <style>
+        .container {
+            text-align: center;
+            margin: 100px auto;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: lightcoral;
+            font-weight: bold;
+        }
+
+        img {
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to BuyTopia, the number one place for your online shopping!</h1>
+        <img src="https://i.pinimg.com/originals/c3/fe/1a/c3fe1addb7c1df50f7e5ba2d6b53426f.gif" alt="Welcome Cartoon">
+        <h2><a href="/list">Make your shopping list</a></h2>
+        <p><a href="/login/">Log out</a> </p>
+    </div>
+</body>
+</html>

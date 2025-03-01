@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'authentication/styles.css' %}">
+    <title style="color: lightcoral;">Welcome to BuyTopia, the number one place for your online shopping!</title>
+    <style>
+        .container {
+            text-align: center;
+            margin: 100px auto;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: lightcoral;
+            font-weight: bold;
+        }
+
+        img {
+            width: 60%;
+        }
+    </style>
+</head>
+<div class="container" style="text-align: left;">
+<h1 style="text-align: center;">Updating Item Status</h1>
+<hr>
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" name="task" value="{{ todo.task }}">
+    <label for="completed">Purchased?</label>
+    <input type="checkbox" name="completed" {% if todo.completed %}checked{% endif %}>
+    <button type="submit">Update</button>
+</form>
+<a href="{% url 'list_todos' %}">Back to shopping list</a>
+</div>

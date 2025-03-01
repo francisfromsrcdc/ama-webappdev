@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'authentication/styles.css' %}">
+    <title style="color: lightcoral;">Welcome to BuyTopia, the number one place for your online shopping!</title>
+    <style>
+        .container {
+            text-align: center;
+            margin: 100px auto;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: lightcoral;
+            font-weight: bold;
+        }
+
+        img {
+            width: 60%;
+        }
+    </style>
+</head>
+<div class="container" style="text-align: left;">
+<h1 style="text-align: center;">Your BuyTopia Shopping List</h1>
+<hr>
+<a href="{% url 'create_todo' %}">Add a new item</a>
+<ul>
+  {% for todo in todos %}
+    <li>
+      {{ todo.task }} - {% if todo.completed %}Purchased!{% else %}Not purchased.{% endif %}
+      <a href="{% url 'update_todo' todo.id %}">Edit</a>
+      <a href="{% url 'delete_todo' todo.id %}">Delete</a>
+    </li>
+  {% endfor %}
+</ul>
+<p><a href="/login/">Log out</a> </p>
+</div>
